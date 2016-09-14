@@ -11,8 +11,8 @@
 		  a45,45 0 1,1 90,0
 		  a45,45 0 1,1 -90,0
 		  "
-		  android:strokeColor="@color/colorPrimary"
-		  android:strokeWidth="2"/>
+		  android:strokeColor="#4a4a4a"
+		  android:strokeWidth="3"/>
 	<group
 		android:name="hour_hand"
 		android:pivotX="50"

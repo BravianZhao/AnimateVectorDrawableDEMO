@@ -1,0 +1,13 @@
+<resources>
+	<string name="app_name">AnimateVactorDrawable</string>
+	<string name="path_circle">
+		M50,50
+		m -48,0
+		a48,48 0 1,1 96,0
+		a48,48 0 1,1 -96,0
+	</string>
+	<string name="left_eye">M30,35 m-7,0 a7,7 0 1,1 14,0 a7,7 0 1,1 -14,0</string>
+	<string name="right_eye">M70,35 m-7,0 a7,7 0 1,1 14,0 a7,7 0 1,1 -14,0</string>
+	<string name="mouth_happy">M30,60 q20,20 40,0</string>
+	<string name="mouth_sad">M30,60 q20,-20 40,0</string>
+</resources>

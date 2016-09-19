@@ -16,15 +16,21 @@
 		android:paddingTop="@dimen/activity_vertical_margin"
 		tools:context="me.ghui.animatevactordrawable.MainActivity">
 		<ImageView
-			android:id="@+id/img_face"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:background="#4ccaa6"
+			android:onClick="onFaceClicked"
+			android:padding="10dp"
+			app:srcCompat="@drawable/animated_done"/>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
 			android:background="@android:color/holo_green_light"
 			android:onClick="onFaceClicked"
 			android:padding="10dp"
 			app:srcCompat="@drawable/animate_face"/>
 		<ImageView
-			android:id="@+id/img_clock"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="10dp"
@@ -33,7 +39,6 @@
 			android:padding="10dp"
 			app:srcCompat="@drawable/animate_clock"/>
 		<ImageView
-			android:id="@+id/img_cup"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="10dp"

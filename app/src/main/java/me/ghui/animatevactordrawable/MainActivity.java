@@ -29,19 +29,18 @@ public class MainActivity extends AppCompatActivity {
 		start(view);
 	}
 
-
 	public void onCupClicked(View view) {
 		start(view);
 	}
 
 	public void onCircleClicked(View view) {
 		start(view);
-		repeat(view);
+//		repeat(view);
 	}
 
 	public void onPointClicked(View view) {
 		start(view);
-		repeat(view);
+//		repeat(view);
 	}
 
 	private void start(View view) {

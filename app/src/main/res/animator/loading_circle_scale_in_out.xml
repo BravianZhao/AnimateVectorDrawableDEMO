@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android"
-	 android:interpolator="@android:interpolator/fast_out_slow_in"
-	 android:repeatCount="infinite"
-	 android:ordering="sequentially">
-	<!-- color 1 -->
+<set
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:ordering="sequentially">
 	<objectAnimator
 		android:duration="600"
 		android:propertyName="pathData"
@@ -24,7 +22,7 @@
 		  a0,0 0 1,1 0,0
 		  a0,0 0 1,1 -0,0"
 		android:valueType="pathType"/>
-	<!-- color 2 -->
+
 	<objectAnimator
 		android:duration="600"
 		android:propertyName="pathData"
@@ -45,7 +43,7 @@
 		  a0,0 0 1,1 0,0
 		  a0,0 0 1,1 -0,0"
 		android:valueType="pathType"/>
-	<!-- color 3 -->
+
 	<objectAnimator
 		android:duration="600"
 		android:propertyName="pathData"
@@ -66,7 +64,7 @@
 		  a0,0 0 1,1 0,0
 		  a0,0 0 1,1 -0,0"
 		android:valueType="pathType"/>
-	<!-- color 4 -->
+
 	<objectAnimator
 		android:duration="600"
 		android:propertyName="pathData"
@@ -87,7 +85,7 @@
 		  a0,0 0 1,1 0,0
 		  a0,0 0 1,1 -0,0"
 		android:valueType="pathType"/>
-	<!-- color 5 -->
+
 	<objectAnimator
 		android:duration="600"
 		android:propertyName="pathData"

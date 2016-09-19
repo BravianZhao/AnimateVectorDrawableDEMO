@@ -57,5 +57,13 @@
 			android:onClick="onCircleClicked"
 			android:padding="10dp"
 			app:srcCompat="@drawable/animate_loading_circle"/>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:background="#e95750"
+			android:onClick="onPointClicked"
+			android:padding="10dp"
+			app:srcCompat="@drawable/anim_loading_point"/>
 	</LinearLayout>
 </ScrollView>

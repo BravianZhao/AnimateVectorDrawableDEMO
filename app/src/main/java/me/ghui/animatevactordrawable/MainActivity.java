@@ -66,4 +66,12 @@ public class MainActivity extends AppCompatActivity {
 			}
 		});
 	}
+
+	public void onHeartClicked(View view) {
+		start(view);
+	}
+
+	public void onPointClicked(View view) {
+		start(view);
+	}
 }

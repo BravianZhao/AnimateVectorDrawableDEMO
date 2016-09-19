@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+		android:width="60dp"
+		android:height="60dp"
+		android:viewportHeight="32"
+		android:viewportWidth="32">
+	<path android:fillColor="#d75a4a"
+		  android:name="heart"
+		  android:pathData="@string/heart_beat_end"
+	/>
+</vector>

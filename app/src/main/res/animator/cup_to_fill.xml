@@ -16,8 +16,8 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:propertyName="pathData"
 	android:valueFrom="M0,38 l50,0 l0,-2 l-50,0 z"
-	android:valueTo="M0,38 l50,0 l0,-30 l-50,0 z"
+	android:valueTo="M0,38 l50,0 l0,-28 l-50,0 z"
 	android:valueType="pathType"
 	android:repeatCount="infinite"
-	android:duration="2500"
+	android:duration="2000"
 	android:interpolator="@android:interpolator/linear_out_slow_in" />

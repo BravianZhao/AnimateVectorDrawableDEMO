@@ -36,4 +36,13 @@
 			  android:textColor="#fff"
 			  android:text="searchBar"
 	/>
+	<ImageView
+		android:id="@+id/img_cup"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:padding="10dp"
+		android:onClick="onCupClicked"
+		android:background="#1da1f2"
+		app:srcCompat="@drawable/animate_cup"/>
 </LinearLayout>

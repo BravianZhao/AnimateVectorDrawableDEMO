@@ -42,4 +42,8 @@ public class MainActivity extends AppCompatActivity {
 	public void searchBarOnClick(View view) {
 		startActivity(new Intent(this, SearchBarActivity.class));
 	}
+
+	public void onCupClicked(View view) {
+		start(view);
+	}
 }

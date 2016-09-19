@@ -59,18 +59,13 @@
 	</group>
 	<group
 		android:name="center_point_gp"
-		android:pivotX="30"
-		android:pivotY="30"
-		android:translateY="0">
+		android:pivotX="30.0"
+		android:pivotY="30.0"
+		android:rotation="-0.0">
 		<path
 			android:name="center_point"
 			android:fillColor="#FFFFFF"
-			android:pathData="
-			M30,30
-			m-3,0
-			a3,3 0, 1,1 6,0
-			a3,3 0, 1,1 -6,0
-			"
+			android:pathData="@string/point_start"
 		/>
 	</group>
 </vector>

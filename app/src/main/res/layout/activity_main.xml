@@ -26,4 +26,14 @@
 		android:background="@android:color/holo_red_light"
 		android:onClick="onClockClicked"
 		app:srcCompat="@drawable/animate_clock"/>
+
+	<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+			  android:layout_marginTop="10dp"
+			  android:gravity="center"
+			  android:background="#ecb423"
+			  android:padding="20dp"
+			  android:onClick="searchBarOnClick"
+			  android:textColor="#fff"
+			  android:text="searchBar"
+	/>
 </LinearLayout>

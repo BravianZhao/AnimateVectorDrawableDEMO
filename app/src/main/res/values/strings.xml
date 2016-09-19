@@ -10,4 +10,9 @@
 	<string name="right_eye">M70,35 m-7,0 a7,7 0 1,1 14,0 a7,7 0 1,1 -14,0</string>
 	<string name="mouth_happy">M30,60 q20,20 40,0</string>
 	<string name="mouth_sad">M30,60 q20,-20 40,0</string>
+
+	<string name="path_search">
+		M141,17
+		A9,9 0 1,1 142,16
+		L149,23</string>
 </resources>

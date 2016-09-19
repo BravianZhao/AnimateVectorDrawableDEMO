@@ -1,6 +1,7 @@
 package me.ghui.animatevactordrawable;
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Build;
@@ -35,5 +36,10 @@ public class MainActivity extends AppCompatActivity {
 			animatable.stop();
 		}
 		animatable.start();
+	}
+
+
+	public void searchBarOnClick(View view) {
+		startActivity(new Intent(this, SearchBarActivity.class));
 	}
 }

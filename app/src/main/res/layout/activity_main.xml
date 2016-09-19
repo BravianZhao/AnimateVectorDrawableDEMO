@@ -19,7 +19,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:background="#4ccaa6"
-			android:onClick="onFaceClicked"
+			android:onClick="onDoneClicked"
 			android:padding="10dp"
 			app:srcCompat="@drawable/animated_done"/>
 		<ImageView

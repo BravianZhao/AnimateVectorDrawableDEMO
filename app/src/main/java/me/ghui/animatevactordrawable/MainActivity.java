@@ -21,23 +21,33 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 	}
 
+	//1
+	public void onDoClicked(View view) {
+		start(view);
+	}
+
+	//2
 	public void onFaceClicked(View view) {
 		start(view);
 	}
 
+	//3
 	public void onClockClicked(View view) {
 		start(view);
 	}
 
+	//4
 	public void onCupClicked(View view) {
 		start(view);
 	}
 
+	//5
 	public void onCircleClicked(View view) {
 		start(view);
 //		repeat(view);
 	}
 
+	//6
 	public void onPointClicked(View view) {
 		start(view);
 //		repeat(view);
@@ -62,10 +72,14 @@ public class MainActivity extends AppCompatActivity {
 				imageView.post(new Runnable() {
 					@Override
 					public void run() {
+						if (mAnimatedVectorDrawable.isRunning()) {
+							mAnimatedVectorDrawable.stop();
+						}
 						mAnimatedVectorDrawable.start();
 					}
 				});
 			}
 		});
 	}
+
 }

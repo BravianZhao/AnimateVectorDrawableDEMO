@@ -32,16 +32,6 @@
 			android:onClick="onClockClicked"
 			android:padding="10dp"
 			app:srcCompat="@drawable/animate_clock"/>
-
-		<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-				  android:layout_marginTop="10dp"
-				  android:background="#ecb423"
-				  android:gravity="center"
-				  android:onClick="searchBarOnClick"
-				  android:padding="20dp"
-				  android:text="searchBar"
-				  android:textColor="#fff"
-		/>
 		<ImageView
 			android:id="@+id/img_cup"
 			android:layout_width="match_parent"

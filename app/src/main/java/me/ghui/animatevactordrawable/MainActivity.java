@@ -1,7 +1,6 @@
 package me.ghui.animatevactordrawable;
 
 import android.annotation.TargetApi;
-import android.content.Intent;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Animatable2;
 import android.graphics.drawable.AnimatedVectorDrawable;
@@ -30,18 +29,6 @@ public class MainActivity extends AppCompatActivity {
 		start(view);
 	}
 
-	private void start(View view) {
-		ImageView imageView = (ImageView) view;
-		Animatable animatable = (Animatable) imageView.getDrawable();
-		if (animatable.isRunning()) {
-			animatable.stop();
-		}
-		animatable.start();
-	}
-
-	public void searchBarOnClick(View view) {
-		startActivity(new Intent(this, SearchBarActivity.class));
-	}
 
 	public void onCupClicked(View view) {
 		start(view);
@@ -57,6 +44,15 @@ public class MainActivity extends AppCompatActivity {
 		repeat(view);
 	}
 
+	private void start(View view) {
+		ImageView imageView = (ImageView) view;
+		Animatable animatable = (Animatable) imageView.getDrawable();
+		if (animatable.isRunning()) {
+			animatable.stop();
+		}
+		animatable.start();
+	}
+
 	@TargetApi(Build.VERSION_CODES.M)
 	private void repeat(View view) {
 		final ImageView imageView = (ImageView) view;
@@ -64,12 +60,12 @@ public class MainActivity extends AppCompatActivity {
 		mAnimatedVectorDrawable.registerAnimationCallback(new Animatable2.AnimationCallback() {
 			@Override
 			public void onAnimationEnd(Drawable drawable) {
-				imageView.postDelayed(new Runnable() {
+				imageView.post(new Runnable() {
 					@Override
 					public void run() {
 						mAnimatedVectorDrawable.start();
 					}
-				},50);
+				});
 			}
 		});
 	}

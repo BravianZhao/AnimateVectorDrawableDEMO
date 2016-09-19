@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	//1
-	public void onDoClicked(View view) {
+	public void onDoneClicked(View view) {
 		start(view);
 	}
 

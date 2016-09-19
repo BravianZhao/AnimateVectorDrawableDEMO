@@ -3,5 +3,5 @@
 				 android:drawable="@drawable/check_mark">
 	<target
 		android:name="tick"
-		android:animation="@anim/check_animation" />
+		android:animation="@animator/check_animation" />
 </animated-vector>

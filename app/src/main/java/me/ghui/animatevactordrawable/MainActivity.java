@@ -3,7 +3,9 @@ package me.ghui.animatevactordrawable;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.graphics.drawable.Animatable;
+import android.graphics.drawable.Animatable2;
 import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -45,5 +47,23 @@ public class MainActivity extends AppCompatActivity {
 
 	public void onCupClicked(View view) {
 		start(view);
+	}
+
+	@TargetApi(Build.VERSION_CODES.M)
+	public void onCircleClicked(View view) {
+		start(view);
+		final ImageView imageView = (ImageView) view;
+		mAnimatedVectorDrawable = (AnimatedVectorDrawable) imageView.getDrawable();
+		mAnimatedVectorDrawable.registerAnimationCallback(new Animatable2.AnimationCallback() {
+			@Override
+			public void onAnimationEnd(Drawable drawable) {
+				imageView.post(new Runnable() {
+					@Override
+					public void run() {
+						mAnimatedVectorDrawable.start();
+					}
+				});
+			}
+		});
 	}
 }

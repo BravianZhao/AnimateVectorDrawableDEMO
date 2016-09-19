@@ -1,48 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent" android:layout_height="match_parent"
-	android:gravity="center_horizontal"
-	android:orientation="vertical"
-	android:paddingBottom="@dimen/activity_vertical_margin"
-	android:paddingLeft="@dimen/activity_horizontal_margin"
-	android:paddingRight="@dimen/activity_horizontal_margin"
-	android:paddingTop="@dimen/activity_vertical_margin"
-	tools:context="me.ghui.animatevactordrawable.MainActivity">
-	<ImageView
-		android:id="@+id/img_face"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:background="@android:color/holo_green_light"
-		android:onClick="onFaceClicked"
-		app:srcCompat="@drawable/animate_face"/>
-	<ImageView
-		android:id="@+id/img_clock"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="10dp"
-		android:background="@android:color/holo_red_light"
-		android:onClick="onClockClicked"
-		app:srcCompat="@drawable/animate_clock"/>
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:paddingRight="@dimen/activity_horizontal_margin"
+		android:paddingTop="@dimen/activity_vertical_margin"
+		tools:context="me.ghui.animatevactordrawable.MainActivity">
+		<ImageView
+			android:id="@+id/img_face"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/holo_green_light"
+			android:onClick="onFaceClicked"
+			app:srcCompat="@drawable/animate_face"/>
+		<ImageView
+			android:id="@+id/img_clock"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:background="@android:color/holo_red_light"
+			android:onClick="onClockClicked"
+			app:srcCompat="@drawable/animate_clock"/>
 
-	<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-			  android:layout_marginTop="10dp"
-			  android:gravity="center"
-			  android:background="#ecb423"
-			  android:padding="20dp"
-			  android:onClick="searchBarOnClick"
-			  android:textColor="#fff"
-			  android:text="searchBar"
-	/>
-	<ImageView
-		android:id="@+id/img_cup"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="10dp"
-		android:padding="10dp"
-		android:onClick="onCupClicked"
-		android:background="#1da1f2"
-		app:srcCompat="@drawable/animate_cup"/>
-</LinearLayout>
+		<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+				  android:layout_marginTop="10dp"
+				  android:background="#ecb423"
+				  android:gravity="center"
+				  android:onClick="searchBarOnClick"
+				  android:padding="20dp"
+				  android:text="searchBar"
+				  android:textColor="#fff"
+		/>
+		<ImageView
+			android:id="@+id/img_cup"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:background="#1da1f2"
+			android:onClick="onCupClicked"
+			android:padding="10dp"
+			app:srcCompat="@drawable/animate_cup"/>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:background="#000"
+			android:onClick="onCircleClicked"
+			android:padding="10dp"
+			app:srcCompat="@drawable/animate_loading_circle"/>
+	</LinearLayout>
+</ScrollView>

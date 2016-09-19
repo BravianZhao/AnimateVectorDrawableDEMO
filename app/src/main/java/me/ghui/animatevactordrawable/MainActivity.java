@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
 	private AnimatedVectorDrawable mAnimatedVectorDrawable;
 
-	@TargetApi(Build.VERSION_CODES.M)
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -40,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
 		animatable.start();
 	}
 
-
 	public void searchBarOnClick(View view) {
 		startActivity(new Intent(this, SearchBarActivity.class));
 	}
@@ -49,29 +47,30 @@ public class MainActivity extends AppCompatActivity {
 		start(view);
 	}
 
-	@TargetApi(Build.VERSION_CODES.M)
 	public void onCircleClicked(View view) {
 		start(view);
+		repeat(view);
+	}
+
+	public void onPointClicked(View view) {
+		start(view);
+		repeat(view);
+	}
+
+	@TargetApi(Build.VERSION_CODES.M)
+	private void repeat(View view) {
 		final ImageView imageView = (ImageView) view;
 		mAnimatedVectorDrawable = (AnimatedVectorDrawable) imageView.getDrawable();
 		mAnimatedVectorDrawable.registerAnimationCallback(new Animatable2.AnimationCallback() {
 			@Override
 			public void onAnimationEnd(Drawable drawable) {
-				imageView.post(new Runnable() {
+				imageView.postDelayed(new Runnable() {
 					@Override
 					public void run() {
 						mAnimatedVectorDrawable.start();
 					}
-				});
+				},50);
 			}
 		});
-	}
-
-	public void onHeartClicked(View view) {
-		start(view);
-	}
-
-	public void onPointClicked(View view) {
-		start(view);
 	}
 }

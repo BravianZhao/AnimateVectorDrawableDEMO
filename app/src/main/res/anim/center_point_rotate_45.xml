@@ -58,4 +58,13 @@
 					android:valueTo="-315"
 					android:valueType="floatType"
 	/>
+
+	<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+					android:duration="0"
+					android:startOffset="500"
+					android:propertyName="rotation"
+					android:valueFrom="-315"
+					android:valueTo="-360"
+					android:valueType="floatType"
+	/>
 </set>

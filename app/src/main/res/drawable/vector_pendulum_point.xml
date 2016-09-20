@@ -6,39 +6,42 @@
 		android:viewportWidth="60">
 	<group android:name="left_point"
 		   android:pivotX="30"
-		   android:pivotY="0"
-		   >
+		   android:pivotY="0">
 		<path
 			android:fillColor="#d43c29"
 			android:pathData="
-		M15,15 m3,0
+		M15,15
 		a3,3 0 1,1 6,0
 		a3,3 0 1,1 -6,0"
+			android:strokeWidth="0"
 		/>
 	</group>
 
 	<path
 		android:fillColor="#d43c29"
 		android:pathData="
-		M21,15 m3,0
+		M21,15
 		a3,3 0 1,1 6,0
 		a3,3 0 1,1 -6,0"
+		android:strokeWidth="0"
 	/>
 
 	<path
 		android:fillColor="#d43c29"
 		android:pathData="
-		M27,15 m3,0
+		M27,15
 		a3,3 0 1,1 6,0
 		a3,3 0 1,1 -6,0"
+		android:strokeWidth="0"
 	/>
 
 	<path
 		android:fillColor="#d43c29"
 		android:pathData="
-		M33,15 m3,0
+		M33,15
 		a3,3 0 1,1 6,0
 		a3,3 0 1,1 -6,0"
+		android:strokeWidth="0"
 	/>
 
 	<group android:name="right_point"
@@ -47,9 +50,10 @@
 		<path
 			android:fillColor="#d43c29"
 			android:pathData="
-		M39,15 m3,0
+		M39,15
 		a3,3 0 1,1 6,0
 		a3,3 0 1,1 -6,0"
+			android:strokeWidth="0"
 		/>
 	</group>
 </vector>

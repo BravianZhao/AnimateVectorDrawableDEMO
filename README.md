@@ -8,7 +8,7 @@
 
 4. ![animate_cup](http://ghui.u.qiniudn.com/gif4.gif) inspired from [here](https://dribbble.com/shots/395607-Animated-Uploading-gif-For-Sipp-iPhone-App)
 
-5. ![animate_loading_circle](http://ghui.u.qiniudn.com/gif5.gif) inspired from [here](https://dribbble.com/shots/2211862-Loading-v3)
+5. ![animate_loading_circle](http://ghui.u.qiniudn.com/gif_5.gif) inspired from [here](https://dribbble.com/shots/2211862-Loading-v3)
 
 6. ![anim_loading_point](http://ghui.u.qiniudn.com/gif6.gif) inspired from [here](https://dribbble.com/shots/2163147-Loading)
 7. ![animate_vector_pendulum_point](http://ghui.u.qiniudn.com/gif7.gif) inspired from [here](https://dribbble.com/shots/963799-Animation-Loading-gif)

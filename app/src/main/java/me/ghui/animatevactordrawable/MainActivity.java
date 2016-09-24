@@ -53,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
 //		repeat(view);
 	}
 
+	//7
+	public void onPendulumPointClicked(View view) {
+		start(view);
+	}
+
 	private void start(View view) {
 		ImageView imageView = (ImageView) view;
 		Animatable animatable = (Animatable) imageView.getDrawable();

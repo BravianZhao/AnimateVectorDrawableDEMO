@@ -37,7 +37,7 @@
 			android:background="@android:color/holo_red_light"
 			android:onClick="onClockClicked"
 			android:padding="10dp"
-			app:srcCompat="@drawable/animate_clock"/>
+			app:srcCompat="@drawable/animate_clock" android:id="@+id/imageView"/>
 		<ImageView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
 			android:background="#000"
 			android:onClick="onCircleClicked"
 			android:padding="10dp"
-			app:srcCompat="@drawable/animate_loading_circle"/>
+			app:srcCompat="@drawable/animate_loading_circle" android:id="@+id/imageView2"/>
 		<ImageView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
 			android:layout_height="wrap_content"
 			android:layout_marginTop="10dp"
 			android:background="#ede9df"
-			android:onClick="onPointClicked"
+			android:onClick="onPendulumPointClicked"
 			android:padding="10dp"
 			app:srcCompat="@drawable/animate_vector_pendulum_point"/>
 	</LinearLayout>
